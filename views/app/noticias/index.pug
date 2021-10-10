@@ -1,0 +1,15 @@
+extends ../../layout.pug
+block contenido
+  div(class="container")
+   div 
+    h1 Tus noticias
+   div(class="container") 
+    for noticia in noticias
+     div(class="white border tr large-padding")
+      div(class="row")
+       div(class="col-md-10")
+        h3=noticia.title
+       div(class="col-md-2")
+        a(href="/app/noticias/"+noticia.id+"/edit" class="right-space hover") Editar
+        form(action="/app/noticias/"+noticia.id+"?_method=DELETE" class="hover link" method="POST")
+          input(type="submit" value="Eliminar")  

@@ -1,0 +1,6 @@
+extends ../../layout.pug
+block contenido
+  div(class="img-container")
+   h1= noticia.title
+   img(src="/static/notiFiles/"+noticia.id+"."+noticia.extension class="main-img")
+   p por #{noticia.creator.email}

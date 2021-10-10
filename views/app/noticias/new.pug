@@ -1,0 +1,23 @@
+extends ../../layout.pug
+block contenido
+  div(class="col-md-4 remove-float  container text-center big-top-space shadow p-3 mb-5 bg-white  box-border")
+    h2 Agregar nueva noticia
+    form(action="/app/noticias", method="POST" enctype="multipart/form-data")
+      div(class="form-group")
+        label(for="title") Titulo de la noticia
+        input(type="text" name="title" placeholder="titulo de la noticia..." id="title" class="form-control bottom-space")
+      div(class="form-group")
+        label(for="description") Descripcion
+        textarea(type="text" name="description" placeholder="descripcion de la noticia"  rows="5" id="description" class="form-control bottom-space")
+      div(class="form-group")
+        label(for="category") Selecciona la categoría
+        select(name="category" class="form-control bottom-space")
+            option(value="social") social
+            option(value="economia") economia
+            option(value="crimen") crimen     
+      div
+        label(for="image") Imagen 
+        input(type="file" name="image" id="image" class="form-control bottom-space")
+      
+      div 
+        input(type="submit" value="Registrar" class="btn btn-info")

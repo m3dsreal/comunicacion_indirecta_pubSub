@@ -1,0 +1,17 @@
+extends ../../layout.pug
+block contenido
+  div(class="col-md-4 remove-float  container text-center big-top-space shadow p-3 mb-5 bg-white  box-border")
+    h2 Agregar nueva noticia
+    form(action="/app/noticias/"+noticia.id+"?_method=PUT", method="POST")
+      div(class="form-group")
+        label(for="title") Titulo de la noticia
+        input(type="text" name="title" placeholder="titulo de la noticia..." id="title" class="form-control bottom-space" value=noticia.title)
+      div(class="form-group")
+        label(for="description") Descripcion
+        input(type="text" name="description" placeholder="descripcion de la noticia"  rows="5" id="description" class="form-control bottom-space" value=noticia.description)     
+      div
+        label(for="image") Imagen 
+        input(type="file" name="image" id="image" class="form-control bottom-space")
+      
+      div 
+        input(type="submit" value="Actualizar" class="btn btn-info")

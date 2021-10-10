@@ -1,0 +1,113 @@
+.right-space{
+    margin-right: 1em;
+}
+
+.remove-float{
+   float: none; 
+}
+
+.box-border{
+    border-radius: 15px;
+}
+
+.big-top-space{
+    margin-top: 200px;
+}
+
+.bottom-space{
+    margin-bottom: 10px;
+}
+
+.large-padding{
+    padding: 10px 15px;
+}
+
+.black{
+    background-color:rgba(36, 71, 148, 0.705);
+}
+
+.white-text{
+    color: white;
+}
+
+nav{
+    text-align: center;
+}
+
+nav li{
+    display: inline-block;
+    margin-right: 1em;
+    font-size: 1.2rem;
+}
+
+nav li a{
+    color: white;
+
+}
+
+nav li a:hover{
+    border-radius: 5px;
+    padding: 6px;
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
+    background-color: rgba(6, 53, 184, 0.733);
+    color: white;
+}
+
+.hover:hover{
+    border-radius: 5px;
+    padding: 6px;
+    transition-delay: 0.1s;
+    transition-duration: 0.1s;
+    background-color: rgba(6, 53, 184, 0.733);
+    color: white;
+}
+
+.white{
+    background-color: white;
+}
+
+.border{
+    border: solid 1px #eee
+}
+
+.tr:nth-of-type(odd){
+  background-color: #eee;
+}
+
+form.link{
+    display: inline-block;  
+}
+
+form.link input[type="submit"]{
+    background-color: transparent;
+    border: none; 
+    color:rgb(163, 21, 21) 
+}
+
+img{
+    max-width: 100%;
+}
+
+.img-container{
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto;
+    
+}
+
+.img-container h1, .img-container h2{
+    padding: 15px;
+    border-bottom: 1px solid #222;
+}
+
+.img-container p{
+    text-align: right;
+    font-size: 1.2em;
+    margin-top: 1em;
+}
+
+.main-img{
+    border-radius: 15px;
+    box-shadow: 0 2px 2px 0 rgb(48, 48, 48);
+}

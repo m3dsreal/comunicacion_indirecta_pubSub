@@ -1,0 +1,17 @@
+extends ../layout.pug
+block contenido
+ div(id="noti")
+  for noticias in noticia
+   div(class="img-container")
+    a(href="/app/noticias/"+noticias.id)
+      h2= noticias.title
+    img(src="static/notiFiles/"+noticias.id+"."+noticias.extension class="main-img")
+    p #{noticias.description} 
+    p por #{noticias.creator.email}
+    p categoria: #{noticias.categoty}
+ script(id="image-template" type="text/x-handlebars-template")
+   div(class="img-container")
+     a(href="/app/noticias/{{id}}")
+       h2 {{title}}
+     img(src="static/notiFiles/{{id}}.{{imagen}}" class="main-img")
+ script(src="static/js/client.js")
